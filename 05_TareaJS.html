@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 5</title>
+	<script type="text/javascript" src="js/javaScript.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+
+</head>
+<body>
+	<h3><a href="index.html">Índice</a></h3>
+
+
+	<!--Se ejecuta la funcion con el evento onclick-->
+	<label>Numero par o impar: (Se imprime en consola)</label>
+	<br>
+	<input type="button" value="Boton 1" onclick="parImpar();">
+	<br><br>
+	<label>Numero primos entre 1 y 50:</label>
+	<br>
+	<input type="button" value="Boton 2" id="myBtn" onclick="ventanaModal()">
+	<br><br>
+	<label>Numero Mayor:</label>
+	<br>
+	<input type="button" value="Boton 3" onclick="numMayor();">
+	
+
+<!--Fuente de JS y CSS obtenidos de W3SCHOOLS (https://www.w3schools.com/howto/howto_css_modals.asp)-->
+<!--Modificacion y adapatación de código por Rafael González-->
+
+<!-- Ventana modal -->
+<div id="myModal" class="modal">
+
+  <!-- Contenido de la ventana -->
+  <div class="modal-content">
+  	<!--Simbolo para cerrar-->
+    <span class="close">&times;</span>
+    <p>Numero primos entre 1 y 50:</p>
+    <p>2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43</p>
+  </div>
+
+</div>
+
+
+	
+</body>
+</html>

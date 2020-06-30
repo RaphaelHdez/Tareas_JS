@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 4</title>
+</head>
+<body>
+	<h3><a href="index.html">Índice</a></h3>
+	<script>
+		//se declara y se inicializa la variable suma en 0
+		suma=0;
+
+		//se pide por primera vez el nuemero, se usa el parseInt para guardarlo en valor numerico
+		numero = parseInt(prompt("Ingresa un número: \n(Ingresa un número negativo o 0 para terminar proceso)"));
+		//se usa el ciclo do-while
+		do{
+			//se usa el acumulador suma para que se vaya guardando el numero que se ingrese
+			suma=suma+numero;
+
+			//se vuelve a pedir que se ingrese un numero, y este se validara para saber si se sigue ejecutando el ciclo o si termina
+			numero = parseInt(prompt("Ingresa un número: \n(Ingresa un número negativo o 0 para terminar proceso)"));
+			
+		}while(numero>0); //se valida el numero para saber si termiana el ciclo o no
+
+		document.write("La suma es: "+suma); //se imprime el resultado de la suma
+		
+	</script>
+
+</body>
+</html>

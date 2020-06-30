@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 2</title>
+	<script>
+		function cambiarTextos(){
+			//Se usa el getElementById para y el innerHTML para que modifique el texto en la etiquta tode esta ese ID
+			document.getElementById("texto").innerHTML="Fernando Rafael González Hernández";
+		}
+	</script>
+</head>
+<body>
+
+	<h3><a href="index.html">Índice</a></h3>
+
+	<!--Se le pone un ID al texto que se va a modificar para identificarlo-->
+	<h1 id="texto">Tarea 02 con JavaScript</h1>
+
+	<!--Tambien se le pone el onclick al boton para que al momento de oprimirlo ejecute el codigo del JS-->
+	<input type="button" value="ClickMe!" onclick="cambiarTextos()">
+	
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 3</title>
+	<script>
+		function cambiarTextos(){
+			//se usa el prompt´para que se abra la ventana y se pueda ingresar un nombre, este al mismo tiempo guardandolo en una variable
+			nombre=prompt("Ingresa un nombre");
+
+			//Se usa el getElementById y el innerHTML para que modifique el texto en la etiquta tode esta ese ID, tambien en ves de poner una cadena de caracteres, se imprime la variable con el nombre
+			document.getElementById("texto").innerHTML=nombre;
+		}
+	</script>
+</head>
+<body>
+
+	<h3><a href="index.html">Índice</a></h3>
+
+	<!--Se le pone un ID al texto que se va a modificar para identificarlo-->
+	<h1 id="texto">Tarea 03 con JavaScript</h1>
+
+	<!--Tambien se le pone el onclick al boton para que al momento de oprimirlo ejecute el codigo del JS-->
+	<input type="button" value="ClickMe!" onclick="cambiarTextos()">
+	
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 1</title>
+</head>
+<body>
+	<h3><a href="index.html">Índice</a></h3>
+	<script>
+		//Preguntamos la calificación
+		calificacion = prompt("¿Cual es tu calificacion del 0-10?")
+		//Usaremos un if para la validación de datos
+		if (calificacion >=0 && calificacion <=10){
+			//si la calificacion esta en el rango seguir con las instrucciones
+			if (calificacion >= 0 && calificacion <= 7.4) {
+				document.write("No Acreditado (NA)");
+			}
+			if (calificacion >= 7.5 && calificacion <=8.4){
+				document.write("Satisfactorio (SA)");
+			}
+			if (calificacion >= 8.5 && calificacion <= 9.4) {
+				document.write("Destacado (DE)");
+			}
+			if (calificacion >= 9.5 && calificacion <=10) {
+				document.write("Autónomo (AU)");
+			}
+		}
+	else{
+		document.write("Calificaón ingresada incorrecta!")
+	}
+
+	</script>
+
+</body>
+</html>
